@@ -1,3 +1,5 @@
+2026年2月22日
+修复二次运行时报CUDA invalid argument错误
 # *[Guide](/Guide.md)*
 
 # How to use
