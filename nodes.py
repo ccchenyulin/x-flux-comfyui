@@ -388,13 +388,7 @@ class XlabsSampler:
             (width // 8) * (height // 8) // 4,
             shift=True,
         )
-        try:
-            inmodel.to(device)
-        except:
-            pass
-        x.to(device)
-        
-        inmodel.diffusion_model.to(device)
+        x.到(device)
         inp_cond = prepare(conditioning[0][0], conditioning[0][1]['pooled_output'], img=x)
         neg_inp_cond = prepare(neg_conditioning[0][0], neg_conditioning[0][1]['pooled_output'], img=x)
 
